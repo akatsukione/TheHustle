@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-Inter;
+}
+
+/* User Wallet
+----------------------------------------------------------*/
+#user_wallet > div:first-child > div,
+#user_wallet > div:last-child > div {
+  width: 100%;
+}
+#user_wallet > div:first-child img {
+  width: 16px;
+}
+#user_wallet > div:last-child img {
+  width: 24px;
+}
+
+/* Scrollbar
+----------------------------------------------------------*/
+*::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #000;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #cec65d;
+  outline: none;
+  border-radius: 500px;
+}
+
+/* Unlock Modal
+----------------------------------------------------------*/
+#unlock_modal .unlock-items:first-of-type,
+#addslot_modal .addslot-item:first-of-type {
+  margin-bottom: 15px;
+}
+#unlock_modal .unlock-items:first-of-type img,
+#addslot_modal .addslot-item:first-of-type img {
+  width: 32px;
+  margin: auto;
+}
+
+
+textarea:focus, input:focus, select:focus{
+  outline: none;
+}
+
+/* Unlock Modal
+----------------------------------------------------------*/
+.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.unlocked {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
+  filter: none;
+  transition: all 0.3s ease;
+}

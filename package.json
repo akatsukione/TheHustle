@@ -1,0 +1,77 @@
+{
+  "name": "wax-game",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.21.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@eosdacio/ual-wax": "^1.9.0",
+    "@mui/material": "^5.11.2",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
+    "@waxio/waxjs": "^1.3.0",
+    "anchor-link": "^3.5.1",
+    "anchor-link-browser-transport": "^3.5.1",
+    "axios": "^1.3.4",
+    "babel-preset-react-app": "^10.0.1",
+    "base64-js": "^1.5.1",
+    "data-uri": "^0.0.3",
+    "dotenv": "^16.0.3",
+    "eosio-signing-request": "^2.5.2",
+    "eosjs": "^22.1.0",
+    "react": "^18.2.0",
+    "react-countdown": "^2.3.2",
+    "react-detect-click-outside": "^1.1.7",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-modal": "^3.15.1",
+    "react-modern-drawer": "^1.1.2",
+    "react-outside-click-handler": "^1.3.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "^5.0.1",
+    "react-scroll-to-top": "^3.0.0",
+    "react-scroll-up": "^1.4.0",
+    "swiper": "^8.3.2",
+    "ual-anchor": "^1.3.0",
+    "ual-ledger": "^0.3.0",
+    "ual-reactjs-renderer": "^0.3.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8"
+  }
+}

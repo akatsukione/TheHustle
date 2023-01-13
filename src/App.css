@@ -1,0 +1,23 @@
+.btn {
+  @apply px-3 py-1.5 cursor-pointer;
+}
+.btn-default {
+  @apply bg-gradient-to-b from-gray-700 to-black  border text-olive border-profile-green;
+}
+.btn-profile {
+  @apply bg-gradient-to-b from-gray-700 to-black border text-olive border-profile-green;
+}
+
+.custom-shadow {
+  box-shadow: #a5a5a5eb 0px 0px 7px -3px !important ;
+}
+
+.active {
+  color: #e2e3e6;
+}
+
+.scroll-to-top {
+  background-color: #D1C6A2 !important;
+  width: 64px !important;
+  height: 64px !important;
+}

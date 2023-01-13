@@ -1,0 +1,12 @@
+[
+  { "id": 1, "isActivated": false, "bonus": 0.5, "count": 100 },
+  { "id": 2, "isActivated": false, "bonus": 1.0, "count": 200 },
+  { "id": 3, "isActivated": true, "bonus": 1.5, "count": 300 },
+  { "id": 4, "isActivated": true, "bonus": 2.0, "count": 400 },
+  { "id": 5, "isActivated": false, "bonus": 2.5, "count": 500 },
+  { "id": 6, "isActivated": false, "bonus": 3.0, "count": 600 },
+  { "id": 7, "isActivated": false, "bonus": 3.5, "count": 700 },
+  { "id": 8, "isActivated": false, "bonus": 4.0, "count": 800 },
+  { "id": 9, "isActivated": false, "bonus": 4.5, "count": 900 },
+  { "id": 10, "isActivated": false, "bonus": 5.0, "count": 1000 }
+]
