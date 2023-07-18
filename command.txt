@@ -1,1 +1,0 @@
-py contribute.py -r https://github.com/dedev168943/TheHustle.git -ue calvin168943@gmail.com -un dedev168943 -fr 80 
