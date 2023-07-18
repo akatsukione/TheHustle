@@ -56,13 +56,12 @@ const Menu = ({ handleCloseDrawer, ual }) => {
   </div>
 
   <ul className="mt-4">
-    <MenuItem text={"Home"} url="/" onClick={handleCloseDrawer} />
+    <li>
+      <MenuItem text={"Home"} url="/" onClick={handleCloseDrawer} />
+    </li>
     <SafehouseMenu handleCloseDrawer={handleCloseDrawer} />
-    <div className="my-3" />
     <HustleMenu handleCloseDrawer={handleCloseDrawer} />
-    <div className="my-3" />
     <Postoffice handleCloseDrawer={handleCloseDrawer} />
-    <div className="my-3" />
     <ShopMenu handleCloseDrawer={handleCloseDrawer} />
     <MenuItem text={"Stash"} url="/stash" onClick={handleCloseDrawer} />
     <MenuItem text={"Hustlers Club"} url="/mission" onClick={handleCloseDrawer} />
