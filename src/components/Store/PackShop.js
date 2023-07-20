@@ -9,7 +9,7 @@ const PackShop = ({ ual }) => {
   const [listData, setListData] = useState([]);
   
   const store = useSelector((state) => state);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const fetchData = useCallback(async () => {  
     if (ual.activeUser) {

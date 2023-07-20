@@ -41,7 +41,8 @@ const App = ({ ual }) => {
         <WalletContext.Provider value={{ balance, setBalance }}>
           <BrowserRouter>
             <Header ual={ual} />
-            <ScrollToTop smooth component={<ScrollUpSVG />} />
+            <ScrollToTop smooth component={<ScrollUpSVG /
+            >} />
             <div className="md:pt-20 bg-[#131312]">
               <Routes>
                 {/* Profile, G Rank, Safe , Leader board  */}

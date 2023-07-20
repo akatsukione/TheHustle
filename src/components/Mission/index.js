@@ -1,40 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import LeaderBoardImg from "assets/images/leaderboard/hustlersclub.png";
-import InfoImg from "assets/images/icons/info.png";
 import CleanCashImg from "assets/images/icons/clean-cash.png";
 import Mission from "./mission";
 import StackModel from "./StackModel";
 import UnStackModel from "./UnStackModel";
+import Tippy from "@tippyjs/react";
+import { FaInfoCircle } from "react-icons/fa";
 
 const sortBy = [
   {
+    id: 1,
     text: "Longest Reward Period",
   },
   {
+    id: 2,
     text: "Shortest Reward Period",
   },
   {
+    id: 3,
     text: "Character Reward",
   },
   {
+    id: 4,
     text: "Boost Reward",
   },
   {
+    id: 5,
     text: "Safe Reward",
   },
   {
+    id: 6,
     text: "Pass Reward",
   },
   {
+    id: 7,
     text: "Lowest Requirement",
   },
   {
+    id: 8,
     text: "Highest Requirement",
   },
   {
+    id: 9,
     text: "Difficulty low to high",
   },
   {
+    id: 10,
     text: "Difficulty high to low",
   },
 ]
@@ -145,7 +156,9 @@ const missionType = [
     starNumber: 5
   },
 ]
-
+const handleSelectChange = (event) => {
+  // setSelectedOption(event.target.value);
+};
 const Index = () => {
   const [isStackOpen, setIsStackOpen] = useState(false);
   const [isUnStackOpen, setIsUnStackOpen] = useState(false);
@@ -153,7 +166,7 @@ const Index = () => {
     <div className="flex w-full flex-col items-center justify-center pb-2 ">
       <img src={LeaderBoardImg} width="300" height="200" alt="" />
       <p className="mb-1 text-0.5xl text-white">Membership Fee</p>
-      <img src={InfoImg} className="h-auto max-w-sm pt-3 shadow-lg" alt="" />
+      <TooltipHustlerClub/>
       <img
         src={CleanCashImg}
         className="h-auto w-20 max-w-sm pt-3"
@@ -216,10 +229,11 @@ const Index = () => {
             className="mx-1 rounded-lg  border border-[#2F2F2E] bg-transparent py-2 px-3 text-white appearance-none"
             placeholder="Search Mission"
             autoComplete="off"
+            onChange={handleSelectChange}
           >
             {
               sortBy.map((value) => 
-                <option key={value.text} className="text-white bg-[#131312]">
+                <option key={value.id} className="text-white bg-[#131312]">
                   {value.text}
                 </option>)
             }
@@ -256,7 +270,21 @@ const Index = () => {
   );
 };
 
+class TooltipHustlerClub extends Component {
+  render() {
+    return (
+      <Tippy
+        content={<span className="">Club members are required to pay weekly membership fee in order to continue having access to the club missions</span>}
+        popperOptions={{
+          placement: "right",
+        }}
+      >
+        <p className="text-xl text-white">
+          <FaInfoCircle />
+        </p>
+      </Tippy>
+    );
+  }
+}
 
 export default Index;
-
-
