@@ -96,7 +96,7 @@ const LeftContent = ({ ual, onAssetIdChange, onRefresh }) => {
             <div className="mx-auto mt-2 w-5/12">
             <div>
           
-          <button className="my-5 flex flex-col items-center justify-center rounded-lg border border-[#2F2F2E] py-3 px-3 text-lime-400 hover:bg-[#252525] mt-3 w-full rounded-md text-center capitalize" onClick={handleGetOutOfJail}>
+            <button className="my-5 flex flex-col items-center justify-center rounded-lg border border-[#2F2F2E] py-3 px-3 text-lime-400 hover:bg-[#252525] mt-3 w-full rounded-md text-center capitalize" onClick={handleGetOutOfJail}>
               Get Out of jail
             </button>
             </div>
