@@ -112,7 +112,5 @@ var link = null;
 };
 
  async function anchorLogout(userAccount) {
-    //console.log(link);
-    //console.log(anchorSession);
     link.removeSession('nambuangongo', anchorSession.auth, anchorSession.chainId)
 };

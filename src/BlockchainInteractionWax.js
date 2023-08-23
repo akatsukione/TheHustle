@@ -101,7 +101,6 @@ export async function getNFTsInWallet(walletAddress) {
       // add the new object to the parsedItems array
       parsedItems.push(parsedItem);
     }
-    //console.log("NFTs in wallet:", parsedItems);
   } catch (err) {
     console.error("Failed to get NFTs in wallet", err);
   }
